@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todoapp/constant/colors.dart';
+import 'package:todoapp/widgets/todo_item.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -19,14 +20,18 @@ class Home extends StatelessWidget {
                   children: [
                     Container(
                         margin: const EdgeInsets.only(top: 35, bottom: 20),
-                        child: Text(
+                        child: const Text(
                           "All To Dos",
                           style: TextStyle(
                               fontSize: 30, fontWeight: FontWeight.w500),
-                        ))
+                        )),
+                    const ToDoItem(),
+                    const ToDoItem(),
+                    const ToDoItem(),
+                    const ToDoItem(),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ));
@@ -35,7 +40,7 @@ class Home extends StatelessWidget {
 
 Widget mysearchbar() {
   return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 15),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20), color: Colors.white),
       child: const TextField(
@@ -59,7 +64,7 @@ AppBar myappbar() {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Icon(
+          const Icon(
             Icons.menu,
             color: ToDoColors.tdBlack,
             size: 30,

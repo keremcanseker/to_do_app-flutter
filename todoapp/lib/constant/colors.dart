@@ -5,4 +5,6 @@ class ToDoColors {
   static const Color menuIconColor = Color(0xFF717171);
   static const Color tdBlack = Color(0xFF3A3A3A);
   static const Color tdGrey = Color(0xFF717171);
+  static const Color tdBlue = Color(0xFF5F52EE);
+  static const Color tdRed = Color(0xFFDA4040);
 }
