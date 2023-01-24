@@ -10,10 +10,23 @@ class Home extends StatelessWidget {
         backgroundColor: ToDoColors.appbarcolor,
         appBar: myappbar(),
         body: Container(
-          padding: EdgeInsets.symmetric(horizontal: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
           child: Column(
             children: [
               mysearchbar(),
+              Expanded(
+                child: ListView(
+                  children: [
+                    Container(
+                        margin: const EdgeInsets.only(top: 35, bottom: 20),
+                        child: Text(
+                          "All To Dos",
+                          style: TextStyle(
+                              fontSize: 30, fontWeight: FontWeight.w500),
+                        ))
+                  ],
+                ),
+              )
             ],
           ),
         ));
